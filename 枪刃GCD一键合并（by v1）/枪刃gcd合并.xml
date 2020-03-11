@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="a2e666eb-7b95-46a6-9d49-b3707e0af734" Name="绝枪基础连与子弹连合并" Enabled="true">
+    <Folders>
+      <Folder Id="c11aa514-23ee-4472-8c7f-7c305e299a32" Name="基础连" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="1" Id="9a6db33d-c956-48ee-bc0c-2f60c78b4c11" RegularExpression=".*发动了“利刃斩”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="2e8166b6-b165-4b61-9958-afa9fc7001aa" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 残忍弹 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="2" Id="1458660d-26fa-43e8-8057-d0b5900fc91a" RegularExpression=".*发动了“残忍弹”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="9a6db33d-c956-48ee-bc0c-2f60c78b4c11" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 迅捷斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="3" Id="2e8166b6-b165-4b61-9958-afa9fc7001aa" RegularExpression=".*发动了“迅捷斩”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="1458660d-26fa-43e8-8057-d0b5900fc91a" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="a576d831-5efa-4025-b79f-ab85484e4525" Name="子弹连" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="1" Id="617cab54-053a-4684-aa96-8b25c3333a78" RegularExpression=".*发动了“烈牙”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="8acf7bcd-539f-4e59-98f9-1854a00f4244" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 猛兽爪 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 烈牙 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="2" Id="dfd4056f-9211-433b-9051-8ca306fc5db4" RegularExpression=".*发动了“猛兽爪”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="617cab54-053a-4684-aa96-8b25c3333a78" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 凶禽爪 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 烈牙 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="3" Id="8acf7bcd-539f-4e59-98f9-1854a00f4244" RegularExpression=".*发动了“凶禽爪”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="dfd4056f-9211-433b-9051-8ca306fc5db4" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 烈牙 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 烈牙 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="f4d07a46-22b6-47a5-9530-0be1a91615da" Name="AOE连招合并" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="2" Id="f55593e0-6722-4c3f-9491-e43a798c389e" RegularExpression=".*发动了“恶魔杀”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="6a3828c2-600a-49ef-8856-9f69cfd0b404" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 恶魔切 2 8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonCacheRequest="True" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 恶魔切 2 8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="1" Id="6a3828c2-600a-49ef-8856-9f69cfd0b404" RegularExpression=".*发动了“恶魔切”。">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="f55593e0-6722-4c3f-9491-e43a798c389e" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 恶魔杀 2 8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 恶魔切 2 8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="15000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="AOE中断单体连招" Id="5c5df9e1-2fda-41aa-8105-901cc3f4e704" RegularExpression=".*发动了“恶魔切”。">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="战斗倒计时初始化" Id="0c7c27aa-6f1d-4842-90cb-67399ce4e167" RegularExpression="01:Change|\] 21:........:40000010:00:00:00:00|任务开始|has begun\.|の攻略を開始した。|距离战斗开始还有5秒！|Battle commencing in 5 seconds!|戦闘開始まで[5５]秒！">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 利刃斩 1 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 烈牙 1 2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:5000/command" JsonPayloadExpression="/hotbar set 恶魔切 2 8" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
